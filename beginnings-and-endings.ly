@@ -1,7 +1,7 @@
 \version "2.18.2"
 
 \header {
-  title = "Beginnings and Endings!"
+  title = "Beginnings and Endings"
   composer = "Joshua Netterfield"
 }
 
