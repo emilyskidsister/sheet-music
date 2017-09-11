@@ -79,9 +79,6 @@ lower = \relative c {
   f,8 c' f aes c aes f4 |
   des,8 aes' des f aes f des4 |
   ees,8 bes' ees bes ees, bes' ees bes |
-  
-  des,,8 f' des aes' f des' aes c |
-  ees,, g' ees bes' des2 |
 }
 
 \score {
