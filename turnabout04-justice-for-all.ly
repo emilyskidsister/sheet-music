@@ -72,11 +72,12 @@
     r8
 
     \time 4/4
+    \powerChords
     
-    c4:m bes/d ees bes
-    f2:m g
+    c4:m bes/d c:m/ees bes
+    f2:m g4:sus4 g
 
-    c4:m bes aes ges:m
+    c4:m bes aes g:m
     f2:m g
 
     f4:m ees des2
