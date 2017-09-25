@@ -26,7 +26,7 @@
 
       <c ees g c>4
       <d f bes d>4
-      <ees g bes e>4
+      <ees g bes ees>4
       <f a c f>4
       <g c d g>8\arpeggio
       d c d bes2\fermata 
@@ -85,6 +85,12 @@
     c4:m bes/ees ees f
     g2 aes
 
+    R1
+
+    des2 des:sus4
+    ges/d des:maj7
+    bes:m ees:m
+    aes1
   }
   \new Staff \relative c {
     R1*6
@@ -114,7 +120,17 @@
       ees c aes c d4
       c8 d |
       ees c f bes, g' ees a f |
-      g1
+      g2 ( aes \fermata )
+
+      \bar "||"
+
+      \key des \major
+      r4 f\( aes ees'
+      des2 \) r8 aes, \( des ges
+      ges aes ~ aes4 ~ aes8 \)
+      bes, des ges
+      f \( ees des8 f ges8 ges f4
+      ees1 \)
     }
   }
   \new Lyrics \lyricsto "vocals" {
@@ -125,6 +141,10 @@
     midst of court- room war, I re-
     mem- ber the i- deals I'm figh- ting
     for.
+
+    I fight for truth.
+    I fight for jus- tice.
+    I fight for ev- ery- one to have a fair chance.
   }
   >>
 }
