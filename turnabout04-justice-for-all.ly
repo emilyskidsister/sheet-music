@@ -80,7 +80,7 @@
     f2:m g
 
     f4:m ees des2
-    c2:m aes
+    c4:m aes g2
 
     c4:m bes/ees ees f
     g2 aes
