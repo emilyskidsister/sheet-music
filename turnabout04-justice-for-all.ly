@@ -83,7 +83,7 @@
     c2:m aes
 
     c4:m bes/ees ees f
-    g1
+    g2 aes
 
   }
   \new Staff \relative c {
