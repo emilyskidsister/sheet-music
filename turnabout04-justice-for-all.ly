@@ -140,39 +140,39 @@
       % Show future time signatures (remember, we got rid of them above...) 
       \override Staff.TimeSignature #'stencil = ##t
 
-      ees8 g d ees c c bes g |
+      ees8 g d8. ees16 c8 c bes g |
       f2 g4. f'16 g |
 
       aes8 aes g16 g f8 ~ f4
       \tuplet 3/2 { f8 f f } |
       ees c aes c d4
-      c8 d |
-      ees c f bes, g' ees a f |
+      r8 c16 d |
+      ees8 c f bes, g'_\markup{\italic rit.} ees a f |
       g2 ( aes \fermata )
 
       \bar "||"
 
       \key des \major
-      r4 f,\( aes ees'
-      des2 \) r8 aes  \( des ges
+      r4 f,\( aes ees' | %These first two bars are weird. I'll come back and fix them later.
+      des2 \) r8 aes  \( des ges | %The "fight"s are longer than "I" or "for"
       ges aes ~ aes4 ~ aes8 \)
-      bes, des ges
-      f \( ees des8 f ges8 ges f4
-      ees2 ~ ees4 \) f8 ges
-      f f f ees ees des r16 bes16 des ees
-      f8 f f ees ees des ~ des bes
-      ges' ges ~ ges bes aes f ees des
-      ees2  aes,4 \( des8 ees
+      bes, des-> ges |
+      \tuplet 3/2 {f \( ees des8} r f \tuplet 3/2 { ges4 ges f }|
+      ees2 ~ ees4 \) f8 ges |
+      f f \tuplet 3/2 {f ees ees} des4 r16 bes16 des ees |
+      f8 f \tuplet 3/2 {f ees ees} des4. bes8 |
+      ges' ges ~ ges bes aes f ees des |
+      ees2  aes,4 \( des8 ees |
       
-      des2 \) r8 aes  \( des ges
+      des2 \) r8 aes  \( des ges |
       ges aes ~ aes4 ~ aes8 \)
-      bes, des ges
-      f \( ees des8 f ges8 ges f f
-      ees2 ~ ees4 \) f8 ges
-      f f f ees ees des r16 bes16 des ees
-      f8 f f ees ees des ~ des bes
+      bes, des ges |
+      f \( ees des8 f ges8 ges f f |
+      ees2 ~ ees4 \) f8 ges |
+      f f f ees ees des r16 bes16 des ees |
+      f8 f f ees ees des ~ des bes |
 
-      c4 des8 c des4 des
+      c4 des8 c des4 des |
       des2.\fermata r8 c16 d \bar "||"
 
       \break
