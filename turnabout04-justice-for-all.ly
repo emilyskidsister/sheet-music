@@ -1,4 +1,4 @@
-\header {
+ \header {
   title = "Justice for All"
   composer = "Matthew Taranto"
   arranger = "J. Netterfield & L. Stericker"
@@ -117,8 +117,17 @@
     f4:m ees des2
     c4:m aes g2
     c4:m bes ees f
-    g2 aes
+    g2:sus4 g
 
+    aes bes
+    c1:m
+    aes2 bes
+    ees1
+    c2:m b:dim
+    f/a aes
+
+    r1
+    g
   }
   \new Staff \relative c {
     R1*7
@@ -189,9 +198,32 @@
       ees8 c aes c d4
       c8 d |
       ees c f bes, g' ees a f |
-      g2 ( aes \fermata )
+      g2.. g16  g |
 
-      \bar "||"
+      aes8 aes aes aes bes16 ~ bes8. ~ bes8 bes16 f |
+      <<
+        { \stemDown g16 g g8 f4 g4. g8 | }
+        \new CueVoice {
+          s2 \stemUp g'16^"piano" g g8 ~ g4 |
+        }
+      >>
+      aes,8 aes aes g f16 f16 ~ f16 ~ f16 d8. f16 |
+      g2. r16 ees ees8 |
+      ees4 ees8 ees f8 ees d ees |
+      f ees d ees c'4. c8 |
+      {
+        \stemUp
+        <c \tweak font-size #-2 aes,>
+        <bes \tweak font-size #-2 g,>
+        <aes \tweak font-size #-2 f,>
+        <g \tweak font-size #-2 ees,>
+        <f \tweak font-size #-2 des,>
+        <ees \tweak font-size #-2 c,>
+        <d \tweak font-size #-2 bes,>
+        <c \tweak font-size #-2 aes,> |
+      }
+      d1
+
 
     }
   }
@@ -224,6 +256,11 @@
     Plan- ting ev- i- dence and lies
     so their crime will be dis- guised,
     they all mask the truth and that's when we ar- ise.
+
+    Some a- ttor- neys are dis- honest, they'll do a- ny- thing to win,
+    and that's when the true chall- en- ges be- gin.
+    Just be- lieve in your cli- ent and the truth will be exp- lored,
+    and don't for- get just what you're figh- ting for.
   }
   >>
 }
