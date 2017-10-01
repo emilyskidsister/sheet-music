@@ -1,7 +1,7 @@
 \header {
   title = "Justice for All"
   composer = "Matthew Taranto"
-  arranger = "Joshua Netterfield"
+  arranger = "J. Netterfield & L. Stericker"
 }
 
 \layout {   
