@@ -1,6 +1,6 @@
 \header {
   title = "Justice for All"
-  composer = "PW Musical Productions"
+  composer = "Matthew Taranto"
   arranger = "Joshua Netterfield"
 }
 
@@ -134,7 +134,7 @@
       c'16 d
       \time 4/4
     
-      ees8 g d ees c c bes g |
+      ees8 g d ees c8. c16 bes8. g16 |
       f2 g4. c16 d |
       
       % Show future time signatures (remember, we got rid of them above...) 
@@ -143,7 +143,7 @@
       ees8 g d ees c c bes g |
       f2 g4. f'16 g |
 
-      aes8 aes g g f4
+      aes8 aes g16 g f8 ~ f4
       \tuplet 3/2 { f8 f f } |
       ees c aes c d4
       c8 d |
