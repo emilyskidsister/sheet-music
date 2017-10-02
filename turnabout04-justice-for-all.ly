@@ -84,12 +84,11 @@
     c4:m aes g2
 
     c4:m bes ees f
-    g2 aes
-
-    R1
+    g1
+    aes1
 
     des2 des:sus4
-    ges/d des
+    ges/des des
     bes:m ees:m
     aes4 ges:1.5 f2:1.5
 
@@ -99,7 +98,7 @@
     aes1
 
     des2 des:sus4
-    ges/d des
+    ges/des des
     bes:m ees:m
     aes4 ges:1.5 f2:1.5
 
@@ -127,7 +126,36 @@
     f/a aes
 
     r1
-    g
+    bes
+
+    \transpose des ees {
+      \time 3/4
+      aes2.
+      \time 4/4
+
+      des2 des:sus4
+      ges/des des
+      bes:m ees:m
+      aes4 ges:1.5 f2:1.5
+
+      f2:1.5 bes:m
+      f2:1.5 des
+      ges f:m
+    }
+
+    aes1
+
+    \transpose des f {
+      des2 des:sus4
+      ges/des des
+      bes:m ees:m
+      aes4 ges:1.5 f2:1.5
+
+      f2:1.5 bes:m
+      f2:1.5 des
+      ges1:m
+      des
+    }
   }
   \new Staff \relative c {
     R1*7
@@ -157,14 +185,14 @@
       ees c aes c d4
       r8 c16 d |
       ees8 c f bes, g'_\markup{\italic rit.} ees a f |
-      g2 ( aes \fermata )
+      g1  \fermata
 
       \bar "||"
 
       \key des \major
-      r4 f,\( aes ees' | %These first two bars are weird. I'll come back and fix them later.
-      des2 \) r8 aes  \( des ges | %The "fight"s are longer than "I" or "for"
-      ges aes ~ aes4 ~ aes8 \)
+      r4 f,8\( aes8 ~ aes4 ees'
+      des2 \) r8 aes16 \( des [~ des8 ~ des16] ges |
+      ges8 aes ~ aes4 ~ aes8 \)
       bes, des-> ges |
       \tuplet 3/2 {f \( ees des8} r f \tuplet 3/2 { ges4 ges f }|
       ees2 ~ ees4 \) f8 ges |
@@ -217,14 +245,45 @@
         <bes \tweak font-size #-2 g,>
         <aes \tweak font-size #-2 f,>
         <g \tweak font-size #-2 ees,>
-        <f \tweak font-size #-2 des,>
+        <f \tweak font-size #-2 d,>
         <ees \tweak font-size #-2 c,>
         <d \tweak font-size #-2 bes,>
         <c \tweak font-size #-2 aes,> |
       }
       d1
 
+      % (╯°□°）╯︵ ┻━┻)
+      \time 3/4
+      g,4 \( bes f'
+      \time 4/4
 
+      %  (╯°□°）╯︵ ┻━┻)
+      \transpose des ees \relative des' {
+        des2 \) r8 aes16 \( des [~ des8 ~ des16] ges |
+        ges8 aes ~ aes4 ~ aes8 \)
+        bes, des-> ges |
+        \tuplet 3/2 {f \( ees des8} r f \tuplet 3/2 { ges4 ges f }|
+        ees2 ~ ees4 \) f8 ges |
+        f f \tuplet 3/2 {f ees ees} des4 r8 bes8 |
+        f'  8 f \tuplet 3/2 {f ees ees} des4. bes8 |
+        ges' ges ~ ges bes aes f ees des |
+      }
+      c'2 c,4 \( f8 g 
+
+      % (╯°□°）╯︵ ┻━┻)
+      \key f \major
+      a2 \)
+      \transpose des f \relative des' {
+        r8 aes16 \( des [~ des8 ~ des16] ges |
+        ges8 aes ~ aes4 ~ aes8 \)
+        bes, des-> ges |
+        \tuplet 3/2 {f \( ees des8} r f ges8. aes16 ges8 f |
+        ees2 ~ ees4 \) f8 ges |
+        f f \tuplet 3/2 {f ees ees} des4 r16 bes des ees |
+        f8 f \tuplet 3/2 {f ees ees} des4. des8 |
+      }
+      d,4 e f2
+      f4 c'4 ~ c2
     }
   }
   \new Lyrics \lyricsto "vocals" {
@@ -261,6 +320,22 @@
     and that's when the true chall- en- ges be- gin.
     Just be- lieve in your cli- ent and the truth will be exp- lored,
     and don't for- get just what you're figh- ting for.
+
+    We fight for peace.
+    We fight for or- der.
+    We fight with ev- id- ence, in- tell- igence, and trust.
+    And we ent- ered this vo- ca- tion to
+    pre- vent mis- in- for- mation, to
+    aim for a ver- dict, fair and just.
+
+    We fight for all.
+    We fight with hon- our.
+    So stand whole- heart- ed- ly,
+    and keep your goals in sight--
+    and in times of des- por- at- ion,
+    def- end with raw de- term- in- a- tion.
+    For you and I...
+    we fight!
   }
   >>
 }
