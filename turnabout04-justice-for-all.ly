@@ -257,7 +257,7 @@
       g,4 \( bes f'
       \time 4/4
 
-      %  (╯°□°）╯︵ ┻━┻)
+      % (╯°□°）╯︵ ┻━┻)
       \transpose des ees \relative des' {
         des2 \) r8 aes16 \( des [~ des8 ~ des16] ges |
         ges8 aes ~ aes4 ~ aes8 \)
