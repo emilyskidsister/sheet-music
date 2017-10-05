@@ -40,7 +40,7 @@
     d4 c ~ c2 |
     g'4 c, ~ c d8 ees |
     d4 ees f aes8 g |
-    e4 c8 c c4 d8 ees |
+    ees4 c8 c c4 d8 ees |
     d4 c8 c c <c g'> <c g'> <c g'> |
     g'4 c,,8 c c4 d8 ees |
     d4 ees f aes8 g |
@@ -96,6 +96,31 @@
     c\( aes'\) c,\( aes'\) c,\( aes'\) c,\( aes'\) |
     bes,\( f'\) bes,\( f'\) bes,\( f'\) bes,\( f'\) |
 
-    c\( aes'\) r4 ees,2 |
+    c\( aes'\) r4 c,,2 |
+    c'8\( g'\) r4 c,,2 |
+    c'8\( aes'\) r4 c,,4 c'8\( aes'\) |
+
+    bes,\( f'\) bes,\( f'\) bes,\( f'\) bes,\( f'\) |
+    bes,\( f'\) bes,\( f'\) bes,\( f'\) bes,\( f'\) |
+    g,2 b |
+
+    c'8 b aes g f ees d c |
+    <c aes'>4 c8\( aes'\) <c, g'>4 c8\( g'\) |
+    <c, aes'>4 c8\( aes'\) <c, g'>4 c8\( g'\) |
+
+    c,8\( g'\) c,8\( g'\) c,8\( g'\) c,8\( g'\) |
+    bes,\( g'\) bes,8 \( g'\) bes,8 \( g'\) bes,8 \( g'\) |
+    aes,\( g'\) aes,\( g'\) aes,\( g'\) aes,\( g'\) |
+    g,\( g'\) g,\( g'\) g,\( g'\) g,\( g'\) |
+
+    aes,\( f'\) aes,\( f'\) aes,\( f'\) aes,\( f'\) |
+    g,\( f'\) g,\( f'\) g,\( f'\) g,\( f'\) |
+
+    aes,\( g'\) aes,\( g'\) aes,\( g'\) aes,\( g'\) |
+    bes,\( f'\) bes,\( f'\) bes,\( f'\) bes,\( f'\) |
+    c\( aes'\) c,\( aes'\) c,\( aes'\) c,\( aes'\) |
+    bes,\( f'\) bes,\( f'\) bes,\( f'\) bes,\( f'\) |
+
+    c, \( aes' \) r4 <c, aes'>2
   }
 >>
