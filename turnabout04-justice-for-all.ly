@@ -190,8 +190,8 @@
       \bar "||"
 
       \key des \major
-      r4 f,8\( aes8 ~ aes4 ees'
-      des2 \) r8 aes16 \( des [~ des8 ~ des16] ges |
+      r4 f,8\( aes8 ~ aes4 ees' |
+      des2 \) r8 aes16 \( des ~ des8. ges16 |
       ges8 aes ~ aes4 ~ aes8 \)
       bes, des-> ges |
       \tuplet 3/2 {f \( ees des8} r f \tuplet 3/2 { ges4 ges f }|
@@ -235,7 +235,7 @@
           s2 \stemUp g'16^"piano" g g8 ~ g4 |
         }
       >>
-      aes,8 aes aes g f16 f16 ~ f16 ~ f16 d8. f16 |
+      aes,8 aes aes g f16 f8. d f16 |
       g2. r16 ees ees8 |
       ees4 ees8 ees f8 ees d ees |
       f ees d ees c'4. c8 |
@@ -257,7 +257,7 @@
       g,4 \( bes f'
       \time 4/4
 
-      % (╯°□°）╯︵ ┻━┻)
+      %  (╯°□°）╯︵ ┻━┻)
       \transpose des ees \relative des' {
         des2 \) r8 aes16 \( des [~ des8 ~ des16] ges |
         ges8 aes ~ aes4 ~ aes8 \)
@@ -274,7 +274,7 @@
       \key f \major
       a2 \)
       \transpose des f \relative des' {
-        r8 aes16 \( des [~ des8 ~ des16] ges |
+        r8 aes16 \( des ~ des8. ges16 |
         ges8 aes ~ aes4 ~ aes8 \)
         bes, des-> ges |
         \tuplet 3/2 {f \( ees des8} r f ges8. aes16 ges8 f |
@@ -332,7 +332,7 @@
     We fight with hon- our.
     So stand whole- heart- ed- ly,
     and keep your goals in sight--
-    and in times of des- por- at- ion,
+    and in times of des- per- at- ion,
     def- end with raw de- term- in- a- tion.
     For you and I...
     we fight!
