@@ -26,7 +26,7 @@
 
     % Measure 9
     ees4 c8 c c4 d8 ees |
-    d4 c8 c c <c g'> <c g'> <c g'> |
+    d4 c8 c c <c->-. g'> <c->-. g'> <c->-. g'> |
     g4 c8 c c4 d8 ees |
 
     d4 ees f aes8 g |
@@ -57,7 +57,7 @@
 
     % Measure 28
     ees4 c8 c c4 d8 ees |
-    d4 c8 c c <c g'> <c g'> <c g'> |
+    d4 c8 c c <c->-. g'> <c->-. g'> <c->-. g'> |
 
     g'4 c,,8 c c4 d8 ees |
     d4 ees f aes8 g |
