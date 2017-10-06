@@ -16,7 +16,7 @@ mainBassTheme = {
     \time 4/4
 
     % Measure 1
-    <cis fis a>2. cis8 a' |
+    <cis fis a>2.~^\markup "With much rubato." cis8 a' |
     <bis, fis' gis>1 |
     <b d gis>2. a'8 gis |
 
