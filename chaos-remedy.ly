@@ -37,7 +37,7 @@ mainBassTheme = {
 
     % Measure 13
     <cis, fis a>8 cis fis cis <cis fis a> cis fis a |
-    <bis fis g> bis fis4 eis ~ \tuplet 3/2 { eis8 fis g } |
+    <bis, fis' gis> bis fis'4 eis ~ \tuplet 3/2 { eis8 fis gis } |
     <cis, fis b> cis fis cis b' a gis fis |
     <cis fis b> cis fis4 eis4 \tuplet 3/2 { b'8 a gis }
 
