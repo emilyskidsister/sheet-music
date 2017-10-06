@@ -21,20 +21,20 @@
     ees\( c ~ c d8 ees |
     d4 c ~ c2\) |
 
-    g'4 c, ~ c d8 e |
+    g'4 c, ~ c d8 ees |
     d4 ees f aes8 g |
 
     % Measure 9
     ees4 c8 c c4 d8 ees |
     d4 c8 c c <c->-. g'> <c->-. g'> <c->-. g'> |
-    g4 c8 c c4 d8 ees |
+    g'4 c,8 c c4 d8 ees |
 
     d4 ees f aes8 g |
     d4 ees f d8 c |
     b1 |
 
     % Measure 15
-    g4 r <c g'>8 <c g'> <c g'> <c g'>16 <c bes'> |
+    g'4 r <c, g'>8 <c g'> <c g'> <c g'>16 <c bes'> |
     aes'8 f16 g aes g f8 g ees ees g |
     f d16 ees f ees d8 ees c c d |
 
@@ -46,7 +46,7 @@
     g f ees f8 aes |
 
     g4 f ees f8 g16 ees |
-    d2. g'4 |
+    d2. ees'4 |
 
     % Measure 24
     ees c ~ c d8 ees |
@@ -159,8 +159,8 @@
     bes,\( f'\) bes,\( f'\) bes,\( f'\) bes,\( f'\) |
 
     % Measure 28
-    c, \( aes' \) r4 <c, aes'>2 |
-    c'8\( g'\) r4 <c, g'>2 |
+    c \( aes' \) r4 <c, aes'>2 |
+    c8\( g'\) r4 <c, g'>2 |
 
     c8\( aes'\) r4 <c, aes'>2 |
     bes8\( f' \) bes,8\( f' \) bes,8\( f' \) bes,8\( f' \) |
@@ -188,7 +188,7 @@
     aes,8\( g'\) aes,8\( g'\) aes,8\( g'\) aes,8\( g'\) |
 
     g,\( f'\) g,\( f'\) g,\( f'\) g,\( f'\) |
-    b4 ees8 d b\staccato\( b\staccato \) r4 |
+    bes4 ees8 d b\staccato\( b\staccato \) r4 |
 
     % Measure 47
     c,8\( g'\) c,\( g'\) c,\( g'\) c,\( g'\) |
