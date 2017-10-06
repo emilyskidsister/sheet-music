@@ -153,8 +153,8 @@
 
       f2:1.5 bes:m
       f2:1.5 des
-      ges1:m
-      des
+      ges2 ges2:m
+      des1
     }
   }
   \new Staff \relative c {
@@ -284,6 +284,8 @@
       }
       d,4 e f2
       f4 c'4 ~ c2
+
+      \bar "|."
     }
   }
   \new Lyrics \lyricsto "vocals" {
