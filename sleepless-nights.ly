@@ -10,15 +10,24 @@
     \set PianoStaff.instrumentName = #"Piano"
     \set PianoStaff.shortInstrumentName = #"Pno."
 
-    \new Staff {
+    \new Staff \relative d' {
       \clef treble
       \key d \minor
       \time 4/4
+      R1*31
+      g2 a2 |
+
+      % Measure 33 [C]
+
     }
-    \new Staff {
+    \new Staff \relative d {
       \clef bass
       \key d \minor
       \time 4/4
+      R1*31
+      ais8 a' e a cis a e a |
+
+      % Measure 33 [C]
     }
   >>
   \new StaffGroup <<
@@ -77,7 +86,7 @@
       d4\< e f g\! ~ |
       g2\f a2 |
 
-      % Meausre 33 [C]
+      % Measure 33 [C]
       d,4 a'8\tenuto g a4\tenuto bes |
       g2. a4 |
       bes a ~ a g |
