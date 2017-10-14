@@ -29,7 +29,7 @@
       ees, g bes ees
       f, a c f |
       <g, c d g>8\arpeggio
-      d c d bes2\fermata 
+      d c d b2\fermata 
       \bar "||"
       % Hide time signature
       \override Staff.TimeSignature #'stencil = ##f
