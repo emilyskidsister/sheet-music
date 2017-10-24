@@ -62,6 +62,7 @@
     }
   >> 
   \chords {
+  \set Staff.midiInstrument = #"guitar"
     R1*7
 
     % Without this, some extra space is added after the line...
@@ -252,12 +253,12 @@
       }
       d1
 
-      % (â¯Â°â¡Â°ï¼â¯ï¸µ â»ââ»)
+      % (Ã¢ÂÂ¯ÃÂ°Ã¢ÂÂ¡ÃÂ°Ã¯Â¼ÂÃ¢ÂÂ¯Ã¯Â¸Âµ Ã¢ÂÂ»Ã¢ÂÂÃ¢ÂÂ»)
       \time 3/4
       g,4 \( bes f'
       \time 4/4
 
-      %  (â¯Â°â¡Â°ï¼â¯ï¸µ â»ââ»)
+      %  (Ã¢ÂÂ¯ÃÂ°Ã¢ÂÂ¡ÃÂ°Ã¯Â¼ÂÃ¢ÂÂ¯Ã¯Â¸Âµ Ã¢ÂÂ»Ã¢ÂÂÃ¢ÂÂ»)
       \transpose des ees \relative des' {
         des2 \) r8 aes16 \( des [~ des8 ~ des16] ges |
         ges8 aes ~ aes4 ~ aes8 \)
@@ -270,7 +271,7 @@
       }
       c'2 c,4 \( f8 g 
 
-      % (â¯Â°â¡Â°ï¼â¯ï¸µ â»ââ»)
+      % (Ã¢ÂÂ¯ÃÂ°Ã¢ÂÂ¡ÃÂ°Ã¯Â¼ÂÃ¢ÂÂ¯Ã¯Â¸Âµ Ã¢ÂÂ»Ã¢ÂÂÃ¢ÂÂ»)
       \key f \major
       a2 \)
       \transpose des f \relative des' {
