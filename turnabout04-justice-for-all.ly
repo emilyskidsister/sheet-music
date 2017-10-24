@@ -61,7 +61,7 @@
       \break
     }
   >> 
-  \new ChordNames \chordmode {
+  \chordmode {
     \set ChordNames.midiInstrument = "acoustic guitar (nylon)"
     R1*7
 
