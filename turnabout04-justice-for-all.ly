@@ -61,8 +61,8 @@
       \break
     }
   >> 
-  \chords {
-  \set Staff.midiInstrument = #"guitar"
+  \new ChordNames \chordmode {
+    \set ChordNames.midiInstrument = "acoustic guitar (nylon)"
     R1*7
 
     % Without this, some extra space is added after the line...
@@ -158,7 +158,9 @@
       des1
     }
   }
+
   \new Staff \relative c {
+    \set Staff.midiInstrument = #"acoustic grand"
     R1*7
     \override Staff.TimeSignature #'stencil = ##f
 
