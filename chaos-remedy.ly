@@ -167,3 +167,5 @@ mainBassTheme = {
     \bar "|."
   }
 >>
+
+\midi {}
