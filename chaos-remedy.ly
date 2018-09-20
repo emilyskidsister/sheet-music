@@ -1,3 +1,5 @@
+\version "2.19.82"
+
 \header {
   title = "Chaos' Remedy"
   composer = "Joshua Netterfield"
