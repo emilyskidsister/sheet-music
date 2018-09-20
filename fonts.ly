@@ -1,3 +1,24 @@
+% end verbatim - this comment is a hack to prevent texinfo.tex
+% from choking on non-European UTF-8 subsets
+
+%% Edit this file using a Unicode aware editor, such as GVIM, GEDIT, Emacs
+
+%{
+
+You may have to install additional fonts.
+
+Red Hat Fedora
+
+    taipeifonts fonts-xorg-truetype ttfonts-ja fonts-arabic \
+   ttfonts-zh_CN fonts-ja fonts-hebrew
+
+Debian GNU/Linux
+
+   apt-get install emacs-intl-fonts xfonts-intl-.* \
+  ttf-kochi-gothic ttf-kochi-mincho \
+  xfonts-bolkhov-75dpi xfonts-cronyx-100dpi xfonts-cronyx-75dpi
+%}
+
 \version "2.19.81"
 
 % Cyrillic font
