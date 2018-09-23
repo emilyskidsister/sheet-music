@@ -93,10 +93,8 @@ cMajorDoubleThirdsRH = \new Voice \relative {
 
 cMajorDoubleThirdsLH = \new Voice \relative {
   \clef bass
-  \stemDown
   \set Timing.defaultBarType = ""
 
-  \clef bass
   <c_5 e_3>8 <d_4 f_2> <e_3 g_1> <f_4 a_2> <g_3 b_1> <a_4 c_2> <b_3 d_1> <c_5 e_3> |
   \clef treble
   <d f> <e g> <f_4 a_2> <g b> <a_4 c_2> <b d> <c_4 e_2> <b_3 d_1> |
@@ -105,6 +103,44 @@ cMajorDoubleThirdsLH = \new Voice \relative {
   \clef bass
   <g_3 b_1> <f a> <e_3 g_1> <d f> \bar "|"
   <c e>2_5
+  \bar "|."
+}
+
+cMajorTriadsRH = \new Voice \relative {
+  \clef treble
+  \set Timing.defaultBarType = ""
+
+  <c'^1 e^3 g^5>4 <e^1 g^2 c^5> <g^1 c^3 e^5> <c^1 e^3 g^5>
+  \bar "||"
+  \time 6/8
+  c,8-1 e-3 g-5
+  e-1 g-2 c-5
+  g-1 c-3 e-5
+  c-1 e-5 g-5
+
+  g-5 e-3 c-1
+  e-5 c-3 g-1
+  c-5 g-2 e-1
+  g-5 e-3 c-1
+  \bar "|."
+}
+
+cMajorTriadsLH = \new Voice \relative {
+  \clef bass
+  \set Timing.defaultBarType = ""
+
+  <c_5 e_3 g_1>4 <e_5 g_3 c_1> <g_5 c_2 e_1> <c_5 e_3 g_1>
+  \bar "||"
+  \time 6/8
+  c,8_5 e_3 g_1
+  e_5 g_3 c_1
+  g_5 c_2 e_1
+  c_5 e_3 g_1
+
+  g_1 e_3 c_5
+  e_1 c_2 g_5
+  c_1 g_3 e_5
+  g_1 e_3 c_5
   \bar "|."
 }
 
@@ -178,6 +214,20 @@ cMajorDoubleThirdsLH = \new Voice \relative {
     \new PianoStaff \with \scaleStaff <<
       \new Staff = "RH" { \cMajorDoubleThirdsRH }
       \new Staff = "LH" { \cMajorDoubleThirdsLH }
+    >>
+
+    \scaleLayout
+    \midi {}
+  }
+
+  \score {
+    \header {
+      piece = "TRIADS — SOLID AND BROKEN"
+    }
+
+    \new PianoStaff \with \scaleStaff <<
+      \new Staff = "RH" { \cMajorTriadsRH }
+      \new Staff = "LH" { \cMajorTriadsLH }
     >>
 
     \scaleLayout
