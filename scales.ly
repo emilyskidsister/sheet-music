@@ -169,7 +169,7 @@ cMajorFourNotesLH = \new Voice \relative {
   c,8-5 e-4 g-2 c e,-5 g-4 c-2 e |
   g,-5 c-3 e-2 g c,-5 e-4 g-2 c |
   c g e c g'-1 e-2 c-3 g |
-  e'-1 c-2 g-4 e c'-1 g-2 e-4 c
+  e'-1 c-2 g-4 e c'-1 g-2 e-4 c-5
 
   \bar "|."
 }
@@ -178,20 +178,20 @@ cMajorArpeggioRH = \new Voice \relative {
   \clef treble
   \set Timing.defaultBarType = ""
 
-  c'8 e g c e g c g |
-  e c g e
+  c'8^1 e^2 g^3 c^1 e g c^5 g |
+  e c g^3 e
   \bar "|"
   c2
   \bar "||"
   
-  e8 g c e g c e c |
-  g e c g
+  e8^1 g^2 c^4 e^1 g c e^5 c |
+  g e c^4 g
   \bar "|"
   e2
   \bar "||"
 
-  g8 c e g c e g e |
-  c g e c
+  g8^1 c^2 e^4 g^1 c e g^5 e |
+  c g e^4 c
   \bar "|"
   g2
   \bar "|."
@@ -202,26 +202,61 @@ cMajorArpeggioLH = \new Voice \relative {
   \set Timing.defaultBarType = ""
 
   \ottava #1
-  c8 e g c
-  e g c g |
-  e c g e
+  c8_5 e_4 g_2 c_1
+  e_4 g c g |
+  e c_1 g e
   \bar "|"
-  c2
+  c2_5
   \bar "||"
 
-  e8 g c e
-  g c e c |
-  g e c g
+  e8_5 g_4 c_2 e_1
+  g_4 c e c |
+  g e_1 c g
   \bar "|"
-  e2
+  e2_5
   \bar "||"
 
-  g8 c e g
-  c e g e |
-  c g e c
+  g8_5 c_3 e_2 g_1
+  c_3 e g e |
+  c g e_1 c
   \bar "|"
-  g2
+  g2_5
   \ottava #0
+  \bar "|."
+}
+
+cMajorDominantSeventhRH = \new Voice \relative {
+  \clef treble
+  \set Timing.defaultBarType = ""
+
+  <g-1 b-2 d-4 f-5>4
+  <b-1 d-2 f-4 g-5>
+  <d-1 f-2 g-3 b-5>
+  <f-1 g-2 b-3 d-5>
+  \bar "||"
+
+  g,8-1 b-2 c-4 f b,-1 d-2 f-4 g |
+  d-1 f-2 g-3 b f-1 g-2 b-4 d-5 |
+  d-5 b-4 g-2 f b-5 g-3 f-2 d |
+  g-5 f-4 d-2 b f'-5 d-4 b-2 g
+  \bar "|."
+
+}
+
+cMajorDominantSeventhLH = \new Voice \relative {
+  \clef bass
+  \set Timing.defaultBarType = ""
+
+  <g,-5 b-4 d-2 f-1>4
+  <b-5 d-4 f-2 g-1>
+  <d-5 f-3 g-2 b-1>
+  <f-5 g-4 b-2 d-1>
+  \bar "||"
+
+  g,8-5 b-4 c-2 f b,-5 d-4 f-2 g |
+  d-5 f-3 g-2 b f-5 g-4 b-2 d-1 |
+  d-1 b-2 g-4 f b-1 g-2 f-3 d |
+  g-1 f-2 d-4 b f'-1 d-2 b-4 g
   \bar "|."
 }
 
@@ -303,7 +338,7 @@ cMajorArpeggioLH = \new Voice \relative {
 
   \score {
     \header {
-      piece = "TRIADS — SOLID AND BROKEN"
+      piece = "TRIADS â SOLID AND BROKEN"
     }
 
     \new PianoStaff \with \scaleStaff <<
@@ -317,7 +352,7 @@ cMajorArpeggioLH = \new Voice \relative {
 
   \score {
     \header {
-      piece = "FOUR NOTE FORM — SOLID AND BROKEN"
+      piece = "FOUR NOTE FORM â SOLID AND BROKEN"
     }
 
     \new PianoStaff \with \scaleStaff <<
@@ -337,6 +372,20 @@ cMajorArpeggioLH = \new Voice \relative {
     \new PianoStaff \with \scaleStaff <<
       \new Staff = "RH" { \cMajorArpeggioRH }
       \new Staff = "LH" { \cMajorArpeggioLH }
+    >>
+
+    \scaleLayout
+    \midi {}
+  }
+
+  \score {
+    \header {
+      piece = "DOMINANT 7TH (G)"
+    }
+
+    \new PianoStaff \with \scaleStaff <<
+      \new Staff = "RH" { \cMajorDominantSeventhRH }
+      \new Staff = "LH" { \cMajorDominantSeventhLH }
     >>
 
     \scaleLayout
