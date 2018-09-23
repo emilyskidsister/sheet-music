@@ -157,7 +157,6 @@ cMajorFourNotesRH = \new Voice \relative {
   g,-1 c-2 e-4 g-5 c,-1 e-2 g-3 c-5 |
   c-5 g e c g'-5 e-4 c-2 g-1 |
   e'-5 c-4 g-2 e-1 c'-5 g-3 e-2 c-1
-
 }
 
 cMajorFourNotesLH = \new Voice \relative {
@@ -175,6 +174,56 @@ cMajorFourNotesLH = \new Voice \relative {
   \bar "|."
 }
 
+cMajorArpeggioRH = \new Voice \relative {
+  \clef treble
+  \set Timing.defaultBarType = ""
+
+  c'8 e g c e g c g |
+  e c g e
+  \bar "|"
+  c2
+  \bar "||"
+  
+  e8 g c e g c e c |
+  g e c g
+  \bar "|"
+  e2
+  \bar "||"
+
+  g8 c e g c e g e |
+  c g e c
+  \bar "|"
+  g2
+  \bar "|."
+}
+
+cMajorArpeggioLH = \new Voice \relative {
+  \clef bass
+  \set Timing.defaultBarType = ""
+
+  \ottava #1
+  c8 e g c
+  e g c g |
+  e c g e
+  \bar "|"
+  c2
+  \bar "||"
+
+  e8 g c e
+  g c e c |
+  g e c g
+  \bar "|"
+  e2
+  \bar "||"
+
+  g8 c e g
+  c e g e |
+  c g e c
+  \bar "|"
+  g2
+  \ottava #0
+  \bar "|."
+}
 
 \book {
   \header {
@@ -274,6 +323,20 @@ cMajorFourNotesLH = \new Voice \relative {
     \new PianoStaff \with \scaleStaff <<
       \new Staff = "RH" { \cMajorFourNotesRH }
       \new Staff = "LH" { \cMajorFourNotesLH }
+    >>
+
+    \scaleLayout
+    \midi {}
+  }
+
+  \score {
+    \header {
+      piece = "ARPEGGIO"
+    }
+
+    \new PianoStaff \with \scaleStaff <<
+      \new Staff = "RH" { \cMajorArpeggioRH }
+      \new Staff = "LH" { \cMajorArpeggioLH }
     >>
 
     \scaleLayout
