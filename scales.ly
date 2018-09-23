@@ -240,7 +240,6 @@ cMajorDominantSeventhRH = \new Voice \relative {
   d-5 b-4 g-2 f b-5 g-3 f-2 d |
   g-5 f-4 d-2 b f'-5 d-4 b-2 g
   \bar "|."
-
 }
 
 cMajorDominantSeventhLH = \new Voice \relative {
@@ -258,6 +257,91 @@ cMajorDominantSeventhLH = \new Voice \relative {
   d-1 b-2 g-4 f b-1 g-2 f-3 d |
   g-1 f-2 d-4 b f'-1 d-2 b-4 g
   \bar "|."
+}
+
+
+cMajorDominantSeventhArpeggiosRH = \new Voice \relative {
+  \clef treble
+  \set Timing.defaultBarType = ""
+
+  g'8 b d f
+  \ottava #1
+  g b d f |
+  g f d b
+  \ottava #0
+  g f d b |
+  \bar "|"
+  g2 s2
+  \bar "||"
+
+  b8 d f g
+  \ottava #1
+  b d f g |
+  b g f d
+  \ottava #0
+  b g f d |
+  \bar "|"
+  b2 s2
+  \bar "||"
+
+  \ottava #1
+  d8 f g b
+  d f g b |
+  d b g f
+  d b g f |
+  \bar "|"
+  d2 s2
+  \bar "||"
+
+
+  f8 g b d
+  f g b d |
+  f d b g
+  f d b g |
+  \bar "|"
+  f2 s2
+  \ottava #0
+  \bar "||"
+}
+
+cMajorDominantSeventhArpeggiosLH = \new Voice \relative {
+  \clef bass
+  \set Timing.defaultBarType = ""
+
+  g,8 b d f
+  g b d f |
+  g f d b
+  g f d b |
+  \bar "|"
+  g2 s2
+  \bar "||"
+
+  \ottava #1
+  b8 d f g
+  b d f g |
+  b g f d
+  b g f d |
+  \bar "|"
+  b2 s2
+  \bar "||"
+
+  d8 f g b
+  d f g b |
+  d b g f
+  d b g f |
+  \bar "|"
+  d2 s2
+  \bar "||"
+
+
+  f8 g b d
+  f g b d |
+  f d b g
+  f d b g |
+  \bar "|"
+  f2 s2
+  \ottava #0
+  \bar "||"
 }
 
 \book {
@@ -380,12 +464,26 @@ cMajorDominantSeventhLH = \new Voice \relative {
 
   \score {
     \header {
-      piece = "DOMINANT 7TH (G)"
+      piece = "DOMINANT 7TH (G7 Chords)"
     }
 
     \new PianoStaff \with \scaleStaff <<
       \new Staff = "RH" { \cMajorDominantSeventhRH }
       \new Staff = "LH" { \cMajorDominantSeventhLH }
+    >>
+
+    \scaleLayout
+    \midi {}
+  }
+
+  \score {
+    \header {
+      piece = "DOMINANT 7TH ARPEGGIOS (G7 Chords)"
+    }
+
+    \new PianoStaff \with \scaleStaff <<
+      \new Staff = "RH" { \cMajorDominantSeventhArpeggiosRH }
+      \new Staff = "LH" { \cMajorDominantSeventhArpeggiosLH }
     >>
 
     \scaleLayout
