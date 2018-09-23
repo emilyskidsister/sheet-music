@@ -144,6 +144,38 @@ cMajorTriadsLH = \new Voice \relative {
   \bar "|."
 }
 
+
+cMajorFourNotesRH = \new Voice \relative {
+  \clef treble
+  \set Timing.defaultBarType = ""
+
+  <c'-1 e-2 g-3 c-5>4 <e-1 g-2 c-4 e-5> <g-1 c-2 e-4 g-5> <c-1 e-2 g-3 c-5>
+  
+  \bar "||"
+  \time 4/4
+  c,8-1 e-2 g-3 c-5 e,-1 g-2 c-4 e-5 |
+  g,-1 c-2 e-4 g-5 c,-1 e-2 g-3 c-5 |
+  c-5 g e c g'-5 e-4 c-2 g-1 |
+  e'-5 c-4 g-2 e-1 c'-5 g-3 e-2 c-1
+
+}
+
+cMajorFourNotesLH = \new Voice \relative {
+  \clef bass
+  \set Timing.defaultBarType = ""
+
+  <c-1 e-2 g-4 c-5>4 <e-1 g-2 c-4 e-5> <g-1 c-2 e-3 g-5> <c-1 e-2 g-4 c-5>
+  \bar "||"
+  \time 4/4
+  c,8-5 e-4 g-2 c e,-5 g-4 c-2 e |
+  g,-5 c-3 e-2 g c,-5 e-4 g-2 c |
+  c g e c g'-1 e-2 c-3 g |
+  e'-1 c-2 g-4 e c'-1 g-2 e-4 c
+
+  \bar "|."
+}
+
+
 \book {
   \header {
     title = \markup { "C Major" }
@@ -228,6 +260,20 @@ cMajorTriadsLH = \new Voice \relative {
     \new PianoStaff \with \scaleStaff <<
       \new Staff = "RH" { \cMajorTriadsRH }
       \new Staff = "LH" { \cMajorTriadsLH }
+    >>
+
+    \scaleLayout
+    \midi {}
+  }
+
+  \score {
+    \header {
+      piece = "FOUR NOTE FORM — SOLID AND BROKEN"
+    }
+
+    \new PianoStaff \with \scaleStaff <<
+      \new Staff = "RH" { \cMajorFourNotesRH }
+      \new Staff = "LH" { \cMajorFourNotesLH }
     >>
 
     \scaleLayout
