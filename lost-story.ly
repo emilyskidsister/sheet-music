@@ -1,3 +1,5 @@
+\version "2.19"
+
 \header {
   title = "Lost Story"
   composer = "Joshua Netterfield"
