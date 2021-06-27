@@ -1,4 +1,4 @@
-\version "2.19.82" 
+\version "2.19.82"
 
 scaleLayout = \layout {
   ragged-last = ##f
